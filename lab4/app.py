@@ -8,8 +8,8 @@ app.config['SECRET_KEY'] = 'ThisSecretKey'
 
 
 class LoginForm(FlaskForm):
-    username = StringField('username', validators=[InputRequired()])
-    password = PasswordField('password', validators=[InputRequired()])
+    username = StringField('username', validators=[InputRequired(message='A username is required')])
+    password = PasswordField('password', validators=[InputRequired('Password is required')])
 
 
 @app.route("/form", methods=['GET', 'POST'])
