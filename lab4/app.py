@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField
 from wtforms.validators import InputRequired, Length, AnyOf
@@ -16,7 +16,7 @@ class LoginForm(FlaskForm):
 @app.route("/form", methods=['GET', 'POST'])
 def form():
     form = LoginForm()
-
+    flash('password is password or secret')
     if form.validate_on_submit():
         return f'The username is {form.username.data}. The password is {form.password.data}'
 
