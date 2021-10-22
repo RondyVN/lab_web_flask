@@ -12,10 +12,15 @@ class LoginForm(FlaskForm):
     password = PasswordField('password')
 
 
-@app.route("/form")
-def start():
+@app.route("/form", methods=['GET', 'POST'])
+def form():
     form = LoginForm()
+
+    if form.validate_on_submit():
+        return f'The username is {form.username.data}. The password is {form.password.data}'
+    
     return render_template('form.html', form=form)
+
 
 
 if __name__ == '__main__':
