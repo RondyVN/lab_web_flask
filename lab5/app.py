@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = 'ThisSecretKey'
 
 
 class LoginForm(FlaskForm):
-    email = StringField('Email*', validators=[InputRequired('Email is required'), Length(min=5, max=30, message='Must be at least 5 and at most 10 characters')])
+    email = StringField('Email*', validators=[InputRequired('Email is required'), Regexp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'), Length(min=5, max=30, message='Must be at least 5 and at most 10 characters')])
     password1 = PasswordField('Password*', validators=[InputRequired('Password is required'), Length(min=6, message='Must be at least 6')])
     password2 = PasswordField('Repeat the password*', validators=[InputRequired('Password is required'), Length(min=6, message='Must be at least 6')])
 

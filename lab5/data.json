@@ -1,11 +1,11 @@
 {
     "rondelman15@gmail.com": {
-        "password": "qwert1234",
-        "number": "4537386",
-        "pin": "4688",
+        "password": "Password",
+        "number": "1234567",
+        "pin": "1234",
         "year": "2020",
-        "serial": "A12",
-        "number_doc": "56489674"
+        "serial": "A43",
+        "number_doc": "12345678"
     },
     "nazar@gmail.com": {
         "password": "asdfzxc",
@@ -38,5 +38,13 @@
         "year": "2013",
         "serial": "AD",
         "number_doc": "456467"
+    },
+    "rondelman15@aasdl.com": {
+        "password": "Password",
+        "number": "1234567",
+        "pin": "1234",
+        "year": "2020",
+        "serial": "A43",
+        "number_doc": "12345678"
     }
 }
