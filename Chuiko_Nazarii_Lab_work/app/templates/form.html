@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-
 {% from "_render_field.html" import render_field %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Form</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
     <h1>Form!!!</h1>
     {% for message in get_flashed_messages() %}
     {{ message }}   (flash message)
@@ -21,5 +15,4 @@
 
         <input type="submit" value="Sumbit">
     </form>
-</body>
-</html>
+{% endblock %}

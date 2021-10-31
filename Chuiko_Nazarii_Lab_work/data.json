@@ -1,0 +1,34 @@
+{
+    "rondelman15@gmail.com": {
+        "password": "Password",
+        "number": "1234567",
+        "pin": "1234",
+        "year": "2020",
+        "serial": "A12",
+        "number_doc": "12345678"
+    },
+    "cv@gmail.com": {
+        "password": "Password",
+        "number": "1234567",
+        "pin": "1234",
+        "year": "2020",
+        "serial": "A12",
+        "number_doc": "12345678"
+    },
+    "nazar@gmail.com": {
+        "password": "Password",
+        "number": "1234567",
+        "pin": "1234",
+        "year": "2020",
+        "serial": "B32",
+        "number_doc": "12345678"
+    },
+    "RondelManasdasd115@gmail.com": {
+        "password": "zxcvbnm",
+        "number": "6758945",
+        "pin": "5647",
+        "year": "2013",
+        "serial": "GF",
+        "number_doc": "567845"
+    }
+}

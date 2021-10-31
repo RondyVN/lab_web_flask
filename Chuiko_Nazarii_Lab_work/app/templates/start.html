@@ -1,0 +1,43 @@
+
+{% from "_render_field.html" import render_field %}
+{% extends 'base.html' %}
+{% block content %}
+<h1>Forms</h1>
+{{ info }}
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="container">
+            {% for category, message in messages %}
+                <div class="alert alert-primary" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    Close
+                    </button>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+    <form method="POST">
+        {{ form.csrf_token }}
+
+        {{ render_field(form.email, value=email) }}
+
+        {{ render_field(form.password1) }}
+
+        {{ render_field(form.password2) }}
+
+        {{ render_field(form.number, value=number) }}
+
+        {{ render_field(form.year, value=year) }}
+
+        {{ render_field(form.pin, value=pin) }}
+
+        {{ render_field(form.serial, value=serial) }}
+
+        {{ render_field(form.number_doc, value=number_doc) }}
+
+        {{ render_field(form.submit) }}
+    </form>
+
+{% endblock %}

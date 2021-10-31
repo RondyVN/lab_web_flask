@@ -1,10 +1,13 @@
-from flask import Flask, render_template, request
-import os, sys, platform
+from flask import Flask, url_for, render_template, session, request, flash, redirect
+from . import app
+from .forms import LoginForm, DataForm
+from .function import write_json, validations
+#from .models import
+import os, sys, platform, json
 from datetime import datetime
 
-app = Flask(__name__)
 
-
+# Lab3
 @app.route("/blog")
 def blog():
     news_dict = {
@@ -38,5 +41,33 @@ def portfolio():
                            platform=platform.system(), release=platform.release(), date=datetime.now())
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Lab4
+@app.route("/form", methods=['GET', 'POST'])
+def form():
+    form = LoginForm()
+    flash('password is password or secret')
+    if form.validate_on_submit():
+        return f'The username is {form.username.data}. The password is {form.password.data}'
+
+    return render_template('form.html', form=form)
+
+
+# lab5
+@app.route("/register_cabinet", methods=['GET', 'POST'])
+def register_cabinet():
+
+    form = DataForm()
+    validations(form)
+    if form.validate_on_submit():
+        session['email'] = form.email.data
+        write_json(form)
+        flash('User has been written in json file')
+        return redirect(url_for('register_cabinet'))
+
+    ses = session['email']
+    with open('data.json') as f:
+        data_files = json.load(f)
+
+    return render_template('start.html', form=form, email=ses, number=data_files[ses]['number'], year=data_files[ses]['year'], pin=data_files[ses]['pin'], serial=data_files[ses]['serial'], number_doc=data_files[ses]['number_doc'], )
+
+
