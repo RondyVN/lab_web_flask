@@ -7,11 +7,11 @@
     {% endfor %}
     <p></p>
     <form method="POST" action="{{ url_for('form') }}">
-        {{ form.csrf_token }}
+        {{ form_f.csrf_token }}
 
-        {{ render_field(form.username) }}
+        {{ render_field(form_f.username) }}
 
-        {{ render_field(form.password) }}
+        {{ render_field(form_f.password) }}
 
         <input type="submit" value="Sumbit">
     </form>

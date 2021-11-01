@@ -4,6 +4,7 @@ from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
 app.config.from_object('config')
-db = SQLAlchemy()
+db = SQLAlchemy(app)
 
-from . import views, forms, function
+bcrypt = Bcrypt(app)
+from . import views
