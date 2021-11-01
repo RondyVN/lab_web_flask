@@ -52,7 +52,7 @@ def form():
     return render_template('form.html', form_f=form)
 
 
-# lab5
+# lab5-6
 @app.route("/register_cabinet", methods=['GET', 'POST'])
 def register_cabinet():
 
@@ -75,7 +75,7 @@ def register_cabinet():
     return render_template('start.html', form=form, email=ses, number=data_files[ses]['number'], year=data_files[ses]['year'], pin=data_files[ses]['pin'], serial=data_files[ses]['serial'], number_doc=data_files[ses]['number_doc'], )
 
 
-# lab5
+# lab7
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
     form = SignUpForm()
