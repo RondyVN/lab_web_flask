@@ -9,8 +9,9 @@
           <div class="card-body p-md-5">
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-
+                <p>Count users: {{ count }}</p>
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-2 mt-2">Users</p>
+
                 {% for user in all_users %}
                   <p class="h3 fw-bold">Username: {{ user.username }}</p>
                   <p class="h3 fw-bold">Email: {{ user.email }}</p>

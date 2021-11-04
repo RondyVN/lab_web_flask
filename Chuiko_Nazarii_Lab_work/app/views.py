@@ -1,5 +1,5 @@
-from flask import Flask, url_for, render_template, session, request, flash, redirect
-from . import app, db, bcrypt
+from flask import Flask, url_for, render_template, session, request, flash, redirect, abort
+from . import app, db
 from .forms import Form, DataForm, SignUpForm, LoginForm
 from .function import write_json, validations
 from .models import User
@@ -52,7 +52,7 @@ def form():
     return render_template('form.html', form_f=form)
 
 
-# lab5
+# lab5-6
 @app.route("/register_cabinet", methods=['GET', 'POST'])
 def register_cabinet():
 
@@ -75,12 +75,12 @@ def register_cabinet():
     return render_template('start.html', form=form, email=ses, number=data_files[ses]['number'], year=data_files[ses]['year'], pin=data_files[ses]['pin'], serial=data_files[ses]['serial'], number_doc=data_files[ses]['number_doc'], )
 
 
-# lab5
+# lab7
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
     form = SignUpForm()
     if form.validate_on_submit():
-        user = User(username=form.username.data, email=form.email.data, password=bcrypt.generate_password_hash(format(form.password1.data)))
+        user = User(username=form.username.data, email=form.email.data, password=form.password1.data)
         db.session.add(user)
         db.session.commit()
         flash(f'Account created for {form.username.data} !', category='success')
@@ -92,18 +92,13 @@ def signup():
 def login():
     form_log = LoginForm()
     if form_log.validate_on_submit():
-        try:
-            email = User.query.filter_by(email=form_log.email.data).first().email
-            password = User.query.filter_by(email=form_log.email.data).first().password
-        except AttributeError:
-            flash('Invalid login or password!', category='success')
-            return redirect(url_for('login'))
-
-        if form_log.email.data == email and bcrypt.check_password_hash(password, form_log.password.data) == True:
-            flash(f'You have been logged by username {User.query.filter_by(email=form_log.email.data).first().username}!', category='success')
+        user = User.query.filter_by(email=form_log.email.data).first()
+        if user and user.verify_password(form_log.password.data):
+            flash(f'You have been logged by username {user.email}!', category='success')
             return redirect(url_for('login'))
         else:
-            flash('Login unsuccessful', category='success')
+            flash('Invalid login or password!', category='warning')
+            return redirect(url_for('login'))
 
     return render_template('login.html', form_log=form_log, title='Login')
 
@@ -111,4 +106,12 @@ def login():
 @app.route("/users", methods=['GET', 'POST'])
 def users():
     all_users = User.query.all()
-    return render_template('user_list.html', all_users=all_users)
+    count = User.query.count()
+    if count == 0:
+        abort(404)
+    return render_template('user_list.html', all_users=all_users, count=count)
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html')
