@@ -5,6 +5,7 @@ from .function import write_json, validations
 from .models import User
 import os, sys, platform, json
 from datetime import datetime
+from flask_login import login_user, current_user, logout_user, login_required
 
 
 # Lab3
@@ -65,19 +66,28 @@ def register_cabinet():
         return redirect(url_for('register_cabinet'))
 
     try:
-        ses = session['email']
+        sesiya = session['email']
+
     except:
         return render_template('start.html', form=form)
 
     with open('data.json') as f:
         data_files = json.load(f)
 
-    return render_template('start.html', form=form, email=ses, number=data_files[ses]['number'], year=data_files[ses]['year'], pin=data_files[ses]['pin'], serial=data_files[ses]['serial'], number_doc=data_files[ses]['number_doc'], )
+    form.email.data = session['email']
+    form.number.data = data_files[sesiya]['number']
+    form.pin.data = data_files[sesiya]['pin']
+    form.year.data = data_files[sesiya]['year']
+    form.serial.data = data_files[sesiya]['serial']
+    form.number.data = data_files[sesiya]['number_doc']
 
+    return render_template('start.html', form=form)
 
 # lab7
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
+    if current_user.is_authenticated:
+        return redirect(url_for('portfolio'))
     form = SignUpForm()
     if form.validate_on_submit():
         user = User(username=form.username.data, email=form.email.data, password=form.password1.data)
@@ -94,8 +104,9 @@ def login():
     if form_log.validate_on_submit():
         user = User.query.filter_by(email=form_log.email.data).first()
         if user and user.verify_password(form_log.password.data):
+            login_user(user, remember=form_log.remember.data)
             flash(f'You have been logged by username {user.email}!', category='success')
-            return redirect(url_for('login'))
+            return redirect(url_for('account'))
         else:
             flash('Invalid login or password!', category='warning')
             return redirect(url_for('login'))
@@ -104,6 +115,7 @@ def login():
 
 
 @app.route("/users", methods=['GET', 'POST'])
+@login_required
 def users():
     all_users = User.query.all()
     count = User.query.count()
@@ -115,3 +127,15 @@ def users():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html')
+
+@app.route("/logout")
+def logout():
+    logout_user()
+    flash('You have been logged out')
+    return redirect(url_for('portfolio'))
+
+@app.route("/account")
+@login_required
+def account():
+    return render_template('account.html')
+

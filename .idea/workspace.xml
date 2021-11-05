@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03618c48-30c1-4230-82ff-3bd0c727f03c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/script.py.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/0595589174b7_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/1092797bcf79_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/194a8517aea7_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/27c07a349c2c_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/3ef7bd6ed1c3_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/413616caff84_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/4db8413c2c55_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/82757bfd7f35_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/98b296aa3b4a_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/fe2184853110_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/start.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.bd" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.bd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +57,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python/io" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -135,17 +160,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="NONE" type="python-line">
-          <url>file://$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py</url>
-          <line>107</line>
-          <log-expression expression="@app.route(&quot;/login&quot;, methods=['GET', 'POST'])&#10;def login():&#10;    form_log = LoginForm()&#10;    if form_log.validate_on_submit():&#10;        try:&#10;            email = User.query.filter_by(email=form_log.email.data).first().email&#10;            password = User.query.filter_by(email=form_log.email.data).first().password&#10;        except AttributeError:&#10;            flash('Invalid login or password!', category='success')&#10;            return redirect(url_for('login'))&#10;&#10;        if form_log.email.data == email and bcrypt.check_password_hash(password, form_log.password.data):&#10;            flash(f'You have been logged by username {User.query.filter_by(email=form_log.email.data).first().username}!', category='success')" language="Python" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

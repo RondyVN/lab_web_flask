@@ -41,4 +41,5 @@ class SignUpForm(FlaskForm):
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired() ,Regexp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')])
     password = PasswordField('Password', validators=[DataRequired()])
+    remember = BooleanField('')
     submit = SubmitField(label=(''))

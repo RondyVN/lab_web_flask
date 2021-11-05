@@ -21,7 +21,7 @@
     <form method="POST">
         {{ form.csrf_token }}
 
-        {{ render_field(form.email, value=email) }}
+        {{ render_field(form.email) }}
 
         {{ render_field(form.password1) }}
 
@@ -29,13 +29,13 @@
 
         {{ render_field(form.number) }}
 
-        {{ render_field(form.year, value=year) }}
+        {{ render_field(form.year) }}
 
-        {{ render_field(form.pin, value=pin) }}
+        {{ render_field(form.pin) }}
 
-        {{ render_field(form.serial, value=serial) }}
+        {{ render_field(form.serial) }}
 
-        {{ render_field(form.number_doc, value=number_doc) }}
+        {{ render_field(form.number_doc) }}
 
         {{ render_field(form.submit) }}
     </form>
