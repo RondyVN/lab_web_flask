@@ -13,27 +13,27 @@
             <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('form') }}">Form</a>
+            <a class="nav-link" href="{{ url_for('cabinet.form') }}">Form</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('register_cabinet') }}">Registers Cabinet</a>
+            <a class="nav-link" href="{{ url_for('cabinet.register_cabinet') }}">Registers Cabinet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('users') }}">Users</a>
+            <a class="nav-link" href="{{ url_for('auth.users') }}">Users</a>
           </li>
           {% if current_user.is_authenticated %}
            <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('account') }}">Account</a>
+            <a class="nav-link" href="{{ url_for('auth.account') }}">Account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+            <a class="nav-link" href="{{ url_for('auth.logout') }}">Logout</a>
           </li>
           {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('signup') }}">SignUp</a>
+            <a class="nav-link" href="{{ url_for('auth.signup') }}">SignUp</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+            <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
           </li>
           {% endif %}
         </ul>

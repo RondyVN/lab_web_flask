@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03618c48-30c1-4230-82ff-3bd0c727f03c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/0595589174b7_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/1092797bcf79_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/194a8517aea7_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/27c07a349c2c_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/3ef7bd6ed1c3_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/413616caff84_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/4db8413c2c55_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/82757bfd7f35_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/98b296aa3b4a_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/fe2184853110_.py" afterDir="false" />
+    <list default="true" id="4079aaa0-87af-4990-982d-bfe82ef8ae9d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/user_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/function.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/templates/form_cabinet/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/templates/form_cabinet/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/user_list.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,79 +36,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="20GW4NykCVOv20yt63RXEwR753n" />
+  <component name="ProjectId" id="20jYn7vCzhBcd4sZZobmvYCUtzy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programs\My programs\Flask\Chuiko_Nazarii_Lab_work\app\templates" />
-      <recent name="D:\Programs\My programs\Flask\Chuiko_Nazarii_Lab_work\app" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Flask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab_3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab_3/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Flask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/forms.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,32 +74,18 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
-        <item itemvalue="Python.forms" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="03618c48-30c1-4230-82ff-3bd0c727f03c" name="Default Changelist" comment="" />
-      <created>1635671213081</created>
+      <changelist id="4079aaa0-87af-4990-982d-bfe82ef8ae9d" name="Changes" comment="" />
+      <created>1636559628339</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1635671213081</updated>
+      <updated>1636559628339</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

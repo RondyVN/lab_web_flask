@@ -6,7 +6,7 @@
     {{ message }}   (flash message)
     {% endfor %}
     <p></p>
-    <form method="POST" action="{{ url_for('form') }}">
+    <form method="POST" action="{{ url_for('cabinet.form') }}">
         {{ form_f.csrf_token }}
 
         {{ render_field(form_f.username) }}
