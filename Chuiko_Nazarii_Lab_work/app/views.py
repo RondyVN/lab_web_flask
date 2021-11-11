@@ -1,8 +1,7 @@
 from flask import url_for, render_template, session, request, flash, redirect
-from . import app
+from flask import current_app as app
 import os, sys, platform, json
 from datetime import datetime
-
 
 
 # Lab3
