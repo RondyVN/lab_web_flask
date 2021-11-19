@@ -1,8 +1,11 @@
-from flask import url_for, render_template, flash, redirect, abort
+from flask import url_for, render_template, flash, request, redirect, abort, current_app
 from .. import db
-from .forms import SignUpForm, LoginForm
+from .forms import SignUpForm, LoginForm, UpdateAccountForm
 from .models import User
 from flask_login import login_user, current_user, logout_user, login_required
+import os
+import secrets
+from PIL import Image
 
 from . import auth_blueprint
 
@@ -15,7 +18,7 @@ def index():
 @auth_blueprint.route("/signup", methods=['GET', 'POST'])
 def signup():
     if current_user.is_authenticated:
-        return redirect(url_for('portfolio'))
+        return redirect(url_for('main_bp.portfolio'))
     form = SignUpForm()
     if form.validate_on_submit():
         user = User(username=form.username.data, email=form.email.data, password=form.password1.data)
@@ -56,11 +59,38 @@ def users():
 def logout():
     logout_user()
     flash('You have been logged out')
-    return redirect(url_for('portfolio'))
+    return redirect(url_for('main_bp.portfolio'))
 
 
-
-@auth_blueprint.route("/account")
+@auth_blueprint.route("/account", methods=['GET', 'POST'])
 @login_required
 def account():
-    return render_template('auth/account.html')
+    form = UpdateAccountForm()
+    if form.validate_on_submit():
+        if form.picture.data:
+            picture_file = save_picture(form.picture.data)
+            current_user.image_file = picture_file
+        current_user.username = form.username.data
+        current_user.email = form.email.data
+        db.session.commit()
+        flash('Your account has been update!', category='success')
+        return redirect(url_for('auth.account'))
+    elif request.method == 'GET':
+        form.username.data = current_user.username
+        form.email.data = current_user.email
+    image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
+    return render_template('auth/account.html', image_file=image_file, form=form)
+
+
+def save_picture(form_picture):
+    random_hex = secrets.token_hex(8)
+    f_name, f_ext = os.path.splitext(form_picture.filename)
+    picture_fn = random_hex + f_ext
+    picture_path = os.path.join(current_app.root_path, 'static/profile_pics', picture_fn)
+    output_size = (250, 250)
+
+    i = Image.open(form_picture)
+    i.thumbnail(output_size)
+    i.save(picture_path)
+
+    return picture_fn
