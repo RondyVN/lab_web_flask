@@ -24,21 +24,53 @@ class BaseTestCase(TestCase):
         db.drop_all()
 
 
-class ViewTestCase(BaseTestCase):
-    def test_login_page_loads(self):
-        with self.client:
-            response = self.client.get('/auth/login')
-            self.assertIn(b'Remember Me', response.data)
-
-    def test_correct_view_index(self):
-        response = self.client.get('/')
+class FlaskTestCase(BaseTestCase):
+    # Ensure that Flask was set up correctly
+    def test_index(self):
+        response = self.client.get('/auth/login', content_type='html/text')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Personal Portfolio Nazar', response.data)
 
-    def test_real_server_is_up_and_running(self):
-        response = urllib.request.urlopen(self.baseURL)
-        self.assertEqual(response.code, 200)
+    # Ensure that main page requires user login
+    def test_main_route_requires_login(self):
+        response = self.client.get('/auth/account', follow_redirects=True)
+        self.assertIn(b'Remember Me', response.data)
+
+
+class UserViewsTests(BaseTestCase):
+
+    # Ensure that the login page loads correctly
+    def test_login_page_loads(self):
+        response = self.client.get('/auth/login')
+        self.assertIn(b'Remember Me', response.data)
+
+    # Ensure login behaves correctly with correct credentials
+    def test_correct_register_and_login(self):
+        with self.client:
+            response = self.client.post(url_for('auth.signup'),
+                data=dict(email="sdaawdgg@gmail.com",
+                          username="testhuan",
+                          password1="Password",
+                          password2="Password"),
+                follow_redirects=True
+            )
+            self.assertEqual(response.status_code, 200)
+
+            response = self.client.post(
+                '/auth/login',
+                data=dict(email="test_lab12@gmail.com", password="Password"),
+                follow_redirects=True
+            )
+            self.assertTrue(current_user.is_active)
+            self.assert_200(response)
+
+    def test_incorrect_login(self):
+        response = self.client.post(
+            '/auth/login',
+            data=dict(email="test_lab12@gmail.com", password="Password"),
+            follow_redirects=True
+        )
 
 
 if __name__ == '__main__':
     unittest.main()
+
