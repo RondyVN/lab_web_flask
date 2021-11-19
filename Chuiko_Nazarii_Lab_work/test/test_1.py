@@ -35,9 +35,9 @@ class ViewTestCase(BaseTestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Personal Portfolio Nazar', response.data)
 
-'''    def test_real_server_is_up_and_running(self):
+    def test_real_server_is_up_and_running(self):
         response = urllib.request.urlopen(self.baseURL)
-        self.assertEqual(response.code, 200)'''
+        self.assertEqual(response.code, 200)
 
 
 if __name__ == '__main__':

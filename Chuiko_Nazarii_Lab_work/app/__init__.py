@@ -26,7 +26,8 @@ def create_app(config_name = 'default'):
 
     with app.app_context():
         # Imports
-        from . import views
+        from .main_bp import main_bp
+        app.register_blueprint(main_bp, url_prefix='/')
 
         from .auth import auth_blueprint
         app.register_blueprint(auth_blueprint, url_prefix='/auth')

@@ -59,6 +59,7 @@ def logout():
     return redirect(url_for('portfolio'))
 
 
+
 @auth_blueprint.route("/account")
 @login_required
 def account():

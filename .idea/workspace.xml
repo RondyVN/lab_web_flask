@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4079aaa0-87af-4990-982d-bfe82ef8ae9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_1.py" afterDir="false" />
+    <list default="true" id="8a9d8de2-6c31-4ddb-b2eb-6cca558a910c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp/personal_portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test_site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test_site.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="20jYn7vCzhBcd4sZZobmvYCUtzy" />
+  <component name="ProjectId" id="21800iVXN1o2fqUlemtRmsqq8D6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,16 +40,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\test" />
-      <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\main_bp\templates\main_bp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python tests.Python tests in test_1.py">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,40 +70,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Chuiko_Nazarii_Lab_work.test.test_1.BaseTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Flask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Chuiko_Nazarii_Lab_work.test.test_1.BaseTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for Chuiko_Nazarii_Lab_work.test.test_1.BaseTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Flask" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Chuiko_Nazarii_Lab_work.test.test_1.BaseTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in test_1.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -108,19 +88,17 @@
       <list>
         <item itemvalue="Python.run" />
         <item itemvalue="Python tests.Python tests in test_1.py" />
-        <item itemvalue="Python tests.Python tests for Chuiko_Nazarii_Lab_work.test.test_1.BaseTestCase" />
-        <item itemvalue="Python tests.Python tests for Chuiko_Nazarii_Lab_work.test.test_1.BaseTestCase" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4079aaa0-87af-4990-982d-bfe82ef8ae9d" name="Changes" comment="" />
-      <created>1636559628339</created>
+      <changelist id="8a9d8de2-6c31-4ddb-b2eb-6cca558a910c" name="Changes" comment="" />
+      <created>1637307185986</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1636559628339</updated>
+      <updated>1637307185986</updated>
     </task>
     <servers />
   </component>
@@ -129,23 +107,10 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="lab10" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
