@@ -2,7 +2,7 @@ import unittest
 import urllib
 from flask import url_for
 from flask_login import current_user
-from flask import request
+from flask import request, current_app
 from flask_testing import TestCase
 
 from app import db, create_app
@@ -34,6 +34,11 @@ class FlaskTestCase(BaseTestCase):
     def test_main_route_requires_login(self):
         response = self.client.get('/auth/account', follow_redirects=True)
         self.assertIn(b'Remember Me', response.data)
+
+    def test_app(self):
+        assert self.app is not None
+        assert self.client is not None
+        assert current_app == self.ap
 
 
 class UserViewsTests(BaseTestCase):

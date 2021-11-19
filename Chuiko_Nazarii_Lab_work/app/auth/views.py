@@ -1,11 +1,12 @@
 from flask import url_for, render_template, flash, request, redirect, abort, current_app
-from .. import db
-from .forms import SignUpForm, LoginForm, UpdateAccountForm
+from .. import db, bcrypt
+from .forms import SignUpForm, LoginForm, UpdateAccountForm, ResetPasswordForm
 from .models import User
 from flask_login import login_user, current_user, logout_user, login_required
 import os
 import secrets
 from PIL import Image
+from datetime import datetime
 
 from . import auth_blueprint
 
@@ -72,12 +73,14 @@ def account():
             current_user.image_file = picture_file
         current_user.username = form.username.data
         current_user.email = form.email.data
+        current_user.about_me = form.about_me.data
         db.session.commit()
         flash('Your account has been update!', category='success')
         return redirect(url_for('auth.account'))
-    elif request.method == 'GET':
-        form.username.data = current_user.username
-        form.email.data = current_user.email
+
+    form.about_me.data = current_user.about_me
+    form.username.data = current_user.username
+    form.email.data = current_user.email
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('auth/account.html', image_file=image_file, form=form)
 
@@ -94,3 +97,22 @@ def save_picture(form_picture):
     i.save(picture_path)
 
     return picture_fn
+
+
+@auth_blueprint.route("/reset-password", methods=['GET', 'POST'])
+@login_required
+def reset_password():
+    form = ResetPasswordForm()
+    if form.validate_on_submit():
+        current_user.password = bcrypt.generate_password_hash(form.new_password1.data).decode('utf-8')
+        db.session.commit()
+        flash('Password changed', category='success')
+        return redirect(url_for('auth.account'))
+    return render_template('auth/reset password.html', form=form)
+
+
+@auth_blueprint.before_request
+def before_request():
+    if current_user.is_authenticated:
+        current_user.last_date = datetime.utcnow()
+        db.session.commit()
