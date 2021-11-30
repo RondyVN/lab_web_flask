@@ -36,9 +36,9 @@ class User(db.Model, UserMixin):
 
 
 class PostType(enum.Enum):
-    NEWS = 'News'
-    PUBLICATION = 'Publication'
-    OTHER = 'Other'
+    News = 'News'
+    Publication = 'Publication'
+    Other = 'Other'
 
 
 class Posts(db.Model):
@@ -48,3 +48,5 @@ class Posts(db.Model):
     image_file = db.Column(db.String(20), nullable=False, default='postdefault.jpg')
     created = db.Column(db.DateTime, default=db.func.now())
     type = db.Column(db.Enum(PostType))
+    enabled = db.Column(db.Boolean, default=True, nullable=False)
+    post_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
