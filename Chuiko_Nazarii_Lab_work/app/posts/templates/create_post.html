@@ -1,0 +1,14 @@
+{% from "_render_field.html" import render_field %}
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="POST" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    {{ render_field(form.title) }}
+    {{ render_field(form.text) }}
+    {{ render_field(form.picture) }}
+    {{ render_field(form.type) }}
+    <input type="submit" value="Create post">
+</form>
+
+{% endblock %}

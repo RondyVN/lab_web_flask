@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9d8de2-6c31-4ddb-b2eb-6cca558a910c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/reset password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/create_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test_site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test_site.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -39,7 +38,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -49,6 +48,7 @@
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\main_bp\templates\main_bp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\posts" />
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\auth\static\auth" />
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\auth\templates\auth" />
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\auth\templates" />
