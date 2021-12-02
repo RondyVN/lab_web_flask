@@ -10,4 +10,5 @@ class CreatePostForm(FlaskForm):
     picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])
     type = SelectField('type', choices=[('News', 'News'), ('Publication', 'Publication'), ('Other', 'Other')])
     enabled = BooleanField('Enabled',)
+    category = SelectField(u'Category', coerce=int)
     submit = SubmitField('Submit')

@@ -3,6 +3,12 @@ import enum
 from .. import db
 
 
+class Category(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False)
+    posts = db.relationship('Posts', backref='category', lazy=True)
+
+
 class PostType(enum.Enum):
     News = 'News'
     Publication = 'Publication'
@@ -22,9 +28,3 @@ class Posts(db.Model):
 
     def __repr__(self):
         return f"Post('{self.id}', '{self.title}', '{self.type}')"
-
-
-class Сategory(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), nullable=False)
-    posts = db.relationship('Posts', backref='category', lazy=True)

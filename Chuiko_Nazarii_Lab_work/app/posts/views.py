@@ -1,6 +1,6 @@
 from flask import url_for, render_template, redirect
 from flask_login import login_required
-from .models import Posts
+from .models import Posts, Category
 from flask import url_for, render_template, flash, request, redirect, abort, current_app
 from .. import db, bcrypt
 from flask_login import login_user, current_user, logout_user, login_required
@@ -44,6 +44,7 @@ def create():
 
         return redirect(url_for('post.view_post'))
 
+    form.category.choices = [(category.id, category.name) for category in Category.query.all()]
     return render_template('create_post.html', form=form)
 
 
