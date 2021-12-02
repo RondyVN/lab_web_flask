@@ -1,0 +1,37 @@
+{% from "_render_field.html" import render_field %}
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/posts.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+
+        {% for post in posts %}
+        <div class="col-md-4">
+            <div class="single-blog-item">
+                <div class="blog-thumnail">
+                    <a href="" class="title-post"><img
+                            src="{{ url_for('static', filename='posts_pics/' + post.image_file) }}"></a>
+                </div>
+                <div class="blog-content">
+                    <h4><a href="{{ url_for('post.view_detail', pk=post.id) }}">{{ post.title }}</a></h4>
+                    <div class="container wrap">
+                        <div class="btn-group btn-toggle">
+                            <button class="btn btn-sm {{ 'btn-success' if post.enabled else 'btn-danger' }}">
+                                {{ 'On' if post.enabled else 'Off' }}
+                            </button>
+
+                        </div>
+                    </div>
+                    <p>{{ post.type.value }}</p>
+                    <p>{{ post.text[:200] + '...' }}</p>
+                    <a href="{{ url_for('post.view_detail', pk=post.id) }}" class="more-btn">View More</a>
+                </div>
+                <span class="blog-date">{{ post.created.strftime('%B %d %Y - %H:%M') }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

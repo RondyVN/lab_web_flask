@@ -1,16 +1,13 @@
 from flask import url_for, render_template, redirect
 from flask_login import login_required
-from ..auth.models import Posts
+from .models import Posts
 from flask import url_for, render_template, flash, request, redirect, abort, current_app
 from .. import db, bcrypt
 from flask_login import login_user, current_user, logout_user, login_required
 import os
 import secrets
 from .forms import CreatePostForm
-from sqlalchemy import exc
 
-from PIL import Image
-from datetime import datetime
 
 from . import post_blueprint
 from PIL import Image
@@ -19,8 +16,7 @@ from PIL import Image
 @post_blueprint.route('/', methods=['GET', 'POST'])
 def view_post():
     all_posts = Posts.query.all()
-    image_file = url_for('static', filename='posts_pics/')
-    return render_template('index.html', posts=all_posts, image_file=image_file)
+    return render_template('post.html', posts=all_posts)
 
 
 @post_blueprint.route('/<pk>', methods=['GET', 'POST'])
@@ -66,6 +62,7 @@ def save_picture(form_picture):
 
 
 @post_blueprint.route('/delete/<pk>', methods=['GET', 'POST'])
+@login_required
 def delete_post(pk):
     get_post = Posts.query.get_or_404(pk)
     if current_user.id == get_post.post_id:
@@ -78,6 +75,7 @@ def delete_post(pk):
 
 
 @post_blueprint.route('/update/<pk>', methods=['GET', 'POST'])
+@login_required
 def update_post(pk):
     get_post = Posts.query.get_or_404(pk)
     if current_user.id != get_post.post_id:
@@ -94,9 +92,10 @@ def update_post(pk):
         get_post.title = form.title.data
         get_post.text = form.text.data
         get_post.type = form.type.data
+        get_post.enabled = form.enabled.data
 
-        db.session.commit()
         db.session.add(get_post)
+        db.session.commit()
 
         flash('You post has been update', category='access')
         return redirect(url_for('post.view_detail', pk=pk))
@@ -104,5 +103,6 @@ def update_post(pk):
     form.title.data = get_post.title
     form.text.data = get_post.text
     form.type.data = get_post.type
+    form.enabled.data = get_post.enabled
 
     return render_template('update_post.html', form=form)
