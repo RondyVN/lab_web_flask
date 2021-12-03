@@ -9,6 +9,16 @@ class CreatePostForm(FlaskForm):
     text = TextAreaField('Text', validators=[Length(max=1500)])
     picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])
     type = SelectField('type', choices=[('News', 'News'), ('Publication', 'Publication'), ('Other', 'Other')])
-    enabled = BooleanField('Enabled',)
+    enabled = BooleanField('Enabled', )
     category = SelectField(u'Category', coerce=int)
     submit = SubmitField('Submit')
+
+
+class CategoryForm(FlaskForm):
+    name = StringField('Category name', validators=[DataRequired(), Length(min=2, max=60)])
+    submit = SubmitField('')
+
+
+class EditCategoryForm(FlaskForm):
+    name = StringField('Category name', validators=[DataRequired(), Length(min=2, max=60)])
+    submit = SubmitField('')

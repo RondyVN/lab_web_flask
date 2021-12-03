@@ -6,8 +6,7 @@ from .. import db, bcrypt
 from flask_login import login_user, current_user, logout_user, login_required
 import os
 import secrets
-from .forms import CreatePostForm
-
+from .forms import CreatePostForm, CategoryForm, EditCategoryForm
 
 from . import post_blueprint
 from PIL import Image
@@ -123,4 +122,47 @@ def view_category_post(pk):
     all_posts = Posts.query.filter_by(category_id=pk)
     return render_template('post.html', posts=all_posts)
 
+
+@post_blueprint.route('/catcrud', methods=['GET', 'POST'])
+def category_crud():
+    form = CategoryForm()
+
+    if form.validate_on_submit():
+        category = Category(name=form.name.data)
+
+        db.session.add(category)
+        db.session.commit()
+        flash('Категорія добавленна')
+        return redirect(url_for('.category_crud'))
+
+    categories = Category.query.all()
+    return render_template('category_crud.html', categories=categories, form=form)
+
+
+@post_blueprint.route('/update_category/<id>', methods=['GET', 'POST'])
+def update_category(id):
+    category = Category.query.get_or_404(id)
+    form = CategoryForm()
+    if form.validate_on_submit():
+        category.name = form.name.data
+
+        db.session.add(category)
+        db.session.commit()
+        flash('Категорія відредагована')
+        return redirect(url_for('.category_crud'))
+
+    form.name.data = category.name
+    categories = Category.query.all()
+    return render_template('category_crud.html', categories=categories, form=form)
+
+
+@post_blueprint.route('/delete_category/<id>', methods=['GET'])
+@login_required
+def delete_category(id):
+    category = Category.query.get_or_404(id)
+    db.session.delete(category)
+    db.session.commit()
+
+    flash('Category delete', category='access')
+    return redirect(url_for('.category_crud'))
 

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9d8de2-6c31-4ddb-b2eb-6cca558a910c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/update_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/update_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/styles/posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/styles/posts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db-journal" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
