@@ -1,0 +1,14 @@
+{% from "_render_field.html" import render_field %}
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/posts.css') }}">
+{% endblock %}
+{% block content %}
+<div class="block-category">
+    <ul class="list-group">
+        {% for val in category %}
+        <a href="{{ url_for('post.view_category_post', pk=val.id) }}"><li class="list-group-item list-group-item-dark">{{ val.name }}</li></a>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

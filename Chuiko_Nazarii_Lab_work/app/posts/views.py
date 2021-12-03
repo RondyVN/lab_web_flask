@@ -29,6 +29,7 @@ def view_detail(pk):
 @login_required
 def create():
     form = CreatePostForm()
+    form.category.choices = [(category.id, category.name) for category in Category.query.all()]
     if form.validate_on_submit():
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
@@ -37,14 +38,13 @@ def create():
             image = 'postdefault.jpg'
 
         post = Posts(title=form.title.data, text=form.text.data, type=form.type.data, image_file=image,
-                     post_id=current_user.id)
+                     post_id=current_user.id, category_id=form.category.data)
 
         db.session.add(post)
         db.session.commit()
 
         return redirect(url_for('post.view_post'))
 
-    form.category.choices = [(category.id, category.name) for category in Category.query.all()]
     return render_template('create_post.html', form=form)
 
 
@@ -84,6 +84,7 @@ def update_post(pk):
         return redirect(url_for('post.view_detail', pk=pk))
 
     form = CreatePostForm()
+    form.category.choices = [(category.id, category.name) for category in Category.query.all()]
 
     if form.validate_on_submit():
         if form.picture.data:
@@ -94,6 +95,7 @@ def update_post(pk):
         get_post.text = form.text.data
         get_post.type = form.type.data
         get_post.enabled = form.enabled.data
+        get_post.category_id = form.category.data
 
         db.session.add(get_post)
         db.session.commit()
@@ -105,5 +107,20 @@ def update_post(pk):
     form.text.data = get_post.text
     form.type.data = get_post.type
     form.enabled.data = get_post.enabled
+    form.category.data = get_post.category_id
 
     return render_template('update_post.html', form=form)
+
+
+@post_blueprint.route('/category', methods=['GET', 'POST'])
+def get_category():
+    category = Category.query.all()
+    return render_template('category.html', category=category)
+
+
+@post_blueprint.route('/category/<pk>', methods=['GET', 'POST'])
+def view_category_post(pk):
+    all_posts = Posts.query.filter_by(category_id=pk)
+    return render_template('post.html', posts=all_posts)
+
+

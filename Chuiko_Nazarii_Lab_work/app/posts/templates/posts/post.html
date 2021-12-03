@@ -16,14 +16,13 @@
                 </div>
                 <div class="blog-content">
                     <h4><a href="{{ url_for('post.view_detail', pk=post.id) }}">{{ post.title }}</a></h4>
-                    <div class="container wrap">
-                        <div class="btn-group btn-toggle">
-                            <button class="btn btn-sm {{ 'btn-success' if post.enabled else 'btn-danger' }}">
-                                {{ 'On' if post.enabled else 'Off' }}
-                            </button>
+                    <div class="btn-group btn-toggle">
+                        <button class="btn btn-sm {{ 'btn-success' if post.enabled else 'btn-danger' }}">
+                            {{ 'On' if post.enabled else 'Off' }}
+                        </button>
 
-                        </div>
                     </div>
+                    <p>{{ post.category.name }}</p>
                     <p>{{ post.type.value }}</p>
                     <p>{{ post.text[:200] + '...' }}</p>
                     <a href="{{ url_for('post.view_detail', pk=post.id) }}" class="more-btn">View More</a>
