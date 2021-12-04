@@ -1,0 +1,51 @@
+{% from "_render_field.html" import render_field %}
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/posts.css') }}">
+<div class="detail-post">
+    <div class="item-post">
+        <p>{{ pk.name_inst }}</p>
+        <hr>
+        <p>К-сть студентів: {{ pk.count_student }}</p>
+        <p>Рівень акридитації: {{ pk.category.level }}</p>
+        <p>Місто: {{ pk.city }}</p>
+        <p>К-сть студентів: {{ pk.count_student }}</p>
+        <hr>
+        <p class="width-text">{{ pk.info }}</p>
+        <hr>
+    </div>
+    <div class="buttons">
+        {% if current_user.id == pk.user_id %}
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Delete
+        </button>
+        <a href="{{ url_for('inst.edit_inst', id=pk.id) }}"> <!-- edit !-->
+            <button class="btn btn-primary">Edit</button>
+        </a>
+        {% endif %}
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete institution</h5>
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Ви бажаєте видалити заклад?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <form action="{{ url_for('inst.delete_inst', id=pk.id) }}" method="POST"> <!-- delete !-->
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

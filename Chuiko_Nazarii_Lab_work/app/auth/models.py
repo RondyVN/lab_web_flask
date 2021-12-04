@@ -20,6 +20,7 @@ class User(db.Model, UserMixin):
     last_date = db.Column(db.DateTime, default=db.func.now())
 
     posts = db.relationship('Posts', backref='author', lazy=True)
+    institutions = db.relationship('Institution', backref='author_inst', lazy=True)
 
     def __init__(self, username, email, password, about_me='', image_file='default.jpg'):
         self.username = username
@@ -33,4 +34,7 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return f"User('{self.username}', '{self.email}', '{self.password}')"
+
+
+
 

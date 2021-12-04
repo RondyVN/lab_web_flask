@@ -1,0 +1,27 @@
+{% from "_render_field.html" import render_field %}
+{% extends 'base.html' %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/posts.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+
+        {% for institution in institutions %}
+        <div class="col-md-4">
+            <div class="single-blog-item">
+                <div class="blog-content">
+                    <h4><a href="{{ url_for('inst.detail_inst', id=institution.id) }}">{{ institution.name_inst }}</a></h4>
+                    <button disabled class="btn btn-sm {{ 'btn-success' if institution.military_department else 'btn-danger' }}">
+                        {{ 'Воєнна кафедра є' if institution.military_department else 'Воєнної кафедри немає' }}
+                    </button>
+                    <p>Рівень акридитації: {{ institution.category.level }}</p>
+                    <p>Місто: {{ institution.city }}</p>
+                    <p>К-сть студентів: {{ institution.count_student }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

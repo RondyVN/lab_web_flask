@@ -28,9 +28,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('post.get_category') }}">Category</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('inst.view_inst') }}">institution</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('inst.category_crud') }}">Category accreditation</a>
+                </li>
                 {% if current_user.is_authenticated %}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('post.create') }}">Create Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('inst.add_institution') }}">Add institution</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('auth.account') }}">Account</a>

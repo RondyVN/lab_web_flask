@@ -85,7 +85,7 @@ def update_post(pk):
     form = CreatePostForm()
     form.category.choices = [(category.id, category.name) for category in Category.query.all()]
 
-    if form.validate_on_submit():
+    if form.validate_on_submit:
         if form.picture.data:
             picture_file = save_picture(form.picture.data)
             get_post.image_file = picture_file

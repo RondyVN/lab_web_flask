@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9d8de2-6c31-4ddb-b2eb-6cca558a910c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/category_crud.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/institution_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/institution_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/view_inst.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/styles/posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/styles/posts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -33,11 +46,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\institution\templates\institution" />
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\static\profile_pics" />
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\auth\static\profile_pics" />
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\main_bp\templates\main_bp" />
@@ -50,7 +64,7 @@
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\auth\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python tests.Python tests in test_2.py">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,10 +100,25 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run" />
+        <item itemvalue="Python tests.Python tests in test_2.py" />
         <item itemvalue="Python tests.Python tests in test_1.py" />
+        <item itemvalue="Python.run" />
       </list>
     </recent_temporary>
   </component>

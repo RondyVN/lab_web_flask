@@ -1,0 +1,21 @@
+{% from "_render_field.html" import render_field %}
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/posts.css') }}">
+<form method="POST" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    <div class="block-form-post">
+        <div class="form-post">
+            <div class="form-item">{{ render_field(form.name_inst) }}</div>
+            <div class="form-item">{{ render_field(form.text) }}</div>
+            <div class="form-item">{{ render_field(form.count_student) }}</div>
+            <div class="form-item">{{ render_field(form.city) }}</div>
+            <div class="form-item">{{ render_field(form.military_department) }}</div>
+            <div class="form-item">{{ render_field(form.category) }}</div>
+            <div class="form-item">{{ render_field(form.submit) }}</div>
+        </div>
+    </div>
+
+</form>
+
+{% endblock %}
