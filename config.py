@@ -22,13 +22,13 @@ class DevConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
     WTF_CSRF_ENABLED = True
-    SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI') or \
+    SQLALCHEMY_DATABASE_URI = environ.get('DATABASE_URL') or \
                               'sqlite:///' + os.path.join(basedir, 'site.db')
 
 
 class ProdConfig(Config):
     WTF_CSRF_ENABLED = True
-    SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI') or \
+    SQLALCHEMY_DATABASE_URI = environ.get('DATABASE_URL') or \
                               'sqlite:///' + os.path.join(basedir, 'site.db')
 
 
