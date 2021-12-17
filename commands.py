@@ -1,10 +1,13 @@
 import click
 from flask.cli import with_appcontext
-from flask import current_app as app
 from app import db
 
+from flask import Blueprint
 
-@app.cli.command()
+command_blueprint = Blueprint('cli', __name__, )
+
+
+@command_blueprint.cli.command()
 def initdb():
     """Initialize the database."""
     click.echo('Init the db')
