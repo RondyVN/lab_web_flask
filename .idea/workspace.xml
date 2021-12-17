@@ -2,12 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a9d8de2-6c31-4ddb-b2eb-6cca558a910c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/category_crud.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/category_crud.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/templates/auth/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/reset password.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/templates/auth/reset password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/templates/auth/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/templates/auth/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/templates/auth/user_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/form_cabinet/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/form_cabinet/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/form_cabinet/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/templates/form_cabinet/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/form_cabinet/templates/form_cabinet/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/form_cabinet/templates/form_cabinet/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/form_cabinet/templates/form_cabinet/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/category_crud.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/templates/institution/category_crud.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/institution_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/templates/institution/institution_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/institution_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/templates/institution/institution_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/templates/institution/view_inst.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/templates/institution/view_inst.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/institution/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/institution/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main_bp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main_bp/templates/main_bp/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main_bp/templates/main_bp/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/main_bp/templates/main_bp/personal_portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main_bp/templates/main_bp/personal_portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/category_crud.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/category_crud.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/create_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/create_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/detail_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/detail_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/templates/posts/update_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/update_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/04f3859be8ce566b.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/04f3859be8ce566b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/09d5393dcde10cc3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/09d5393dcde10cc3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/0c5dbfe4ff7e36dc.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/0c5dbfe4ff7e36dc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/0dee5f8e6cfcf233.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/0dee5f8e6cfcf233.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/1d56420137f3f694.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/1d56420137f3f694.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/1dfcd39801197236.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/1dfcd39801197236.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/2338ecf745a2f9ea.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/2338ecf745a2f9ea.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/56c4f2735d48db16.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/56c4f2735d48db16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/73e29a6eec80d744.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/73e29a6eec80d744.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/9016d30b337d3758.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/9016d30b337d3758.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/9686232f4fe99dd7.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/9686232f4fe99dd7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/994420c4b8ac2c97.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/994420c4b8ac2c97.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/9d0f62c9f10b30dd.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/9d0f62c9f10b30dd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/posts_pics/postdefault.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/posts_pics/postdefault.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/0599942fb60ef52b.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/0599942fb60ef52b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/1f8f5da83c0e31fd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/1f8f5da83c0e31fd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/23e0f08cf7689c9b.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/23e0f08cf7689c9b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/499e7a545144574b.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/499e7a545144574b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/5c3a1c76b22fe546.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/5c3a1c76b22fe546.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/6bbfee5e89230b21.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/6bbfee5e89230b21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/7cd972befef5643f.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/7cd972befef5643f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/9dc634e93230f128.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/9dc634e93230f128.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/b42a18733b272e61.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/b42a18733b272e61.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/cd27656076a543f4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/cd27656076a543f4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/cd61ac8c78e80985.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/cd61ac8c78e80985.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/ce6c2a0f45df0dd9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/ce6c2a0f45df0dd9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/d94df18e63efe3ba.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/d94df18e63efe3ba.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/default.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/ead216a41b3d375e.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/ead216a41b3d375e.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/profile_pics/fc1b7fa7cc383276.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/profile_pics/fc1b7fa7cc383276.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/static/styles/posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles/posts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/_render_field.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_render_field.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/README" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/script.py.mako" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/0354567be890_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/0354567be890_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/049abe757493_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/049abe757493_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/0595589174b7_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/0595589174b7_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/0ac4ada854cf_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/0ac4ada854cf_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/1092797bcf79_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/1092797bcf79_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/194a8517aea7_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/194a8517aea7_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/19d283cc166d_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/19d283cc166d_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/1ac0097a2ac8_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/1ac0097a2ac8_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/1f6645571bdc_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/1f6645571bdc_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/2045fc203129_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/2045fc203129_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/27c07a349c2c_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/27c07a349c2c_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/3a7eae339cc9_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/3a7eae339cc9_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/3ef7bd6ed1c3_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/3ef7bd6ed1c3_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/413616caff84_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/413616caff84_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/4db8413c2c55_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/4db8413c2c55_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/6ddd62d2743c_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/6ddd62d2743c_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/82757bfd7f35_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/82757bfd7f35_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/8c038c8330c7_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/8c038c8330c7_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/98b296aa3b4a_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/98b296aa3b4a_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/a1d70e976a71_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/a1d70e976a71_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/af1c395461bf_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/af1c395461bf_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/b14036e958e0_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/b14036e958e0_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/b4d3f82f68d0_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/b4d3f82f68d0_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/c8e48cee50c9_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/c8e48cee50c9_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/d9ce5cd70ee2_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/d9ce5cd70ee2_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/e19a8297d972_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/e19a8297d972_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/e945cb35ebf5_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/e945cb35ebf5_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/ecf0fdf755c0_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/ecf0fdf755c0_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/eea434be01a3_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/eea434be01a3_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/f68cb5db0880_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/f68cb5db0880_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/fa1976c79077_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/fa1976c79077_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/fb5d4f87b309_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/fb5d4f87b309_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/migrations/versions/fe2184853110_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/fe2184853110_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chuiko_Nazarii_Lab_work/test/test_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +153,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../python/api" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -53,7 +170,7 @@
       <recent name="D:\My programs\For lab. Course 3\Flask\Chuiko_Nazarii_Lab_work\app\auth\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.run (1)">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,6 +184,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../python/api/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +234,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_1.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in D:/My programs/For lab. Course 3/Flask/Chuiko_Nazarii_Lab_work/test/test_1.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,7 +248,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in D:/My programs/For lab. Course 3/Flask/Chuiko_Nazarii_Lab_work/test/test_2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Flask" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,10 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run (1)" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Python tests in test_2.py" />
-        <item itemvalue="Python tests.Python tests in test_1.py" />
+        <item itemvalue="Python tests.Python tests in D:/My programs/For lab. Course 3/Flask/Chuiko_Nazarii_Lab_work/test/test_2.py" />
+        <item itemvalue="Python tests.Python tests in D:/My programs/For lab. Course 3/Flask/Chuiko_Nazarii_Lab_work/test/test_1.py" />
       </list>
     </recent_temporary>
   </component>
