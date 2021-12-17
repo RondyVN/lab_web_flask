@@ -23,7 +23,7 @@ def cli():
 def create_tables():
     db.create_all()
     click.echo("tables created!!!")
-    # print("create_all was maked")
+    print("create_all was maked")
 
 
 cli.add_command(create_tables)
