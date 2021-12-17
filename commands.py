@@ -26,7 +26,16 @@ def create_tables():
     print("create_all was maked")
 
 
+@click.command(name='drop_tables')
+@with_appcontext
+def drop_tables():
+    db.drop_all()
+    click.echo("tables drop!!!")
+    print("drop_all was maked")
+
+
 cli.add_command(create_tables)
+cli.add_command(drop_tables)
 
 if __name__ == '__main__':
     cli()
