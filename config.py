@@ -25,7 +25,8 @@ class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI = environ.get('DATABASE_URL').replace("postgres://", "postgresql://", 1) or \
                               'sqlite:///' + os.path.join(basedir, 'site.db')
 
-#replace("postgres://", "postgresql://", 1)
+
+# replace("postgres://", "postgresql://", 1)
 
 class ProdConfig(Config):
     WTF_CSRF_ENABLED = True
