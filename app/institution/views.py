@@ -19,11 +19,15 @@ def add_institution():
     form = AddInstForm()
     form.category.choices = [(category.id, category.level) for category in Categoryacr.query.all()]
     if form.validate_on_submit():
-        inst = Institution(name_inst=form.name_inst.data, count_student=form.count_student.data, info=form.text.data,
-                           city=form.city.data,
-                           military_department=form.military_department.data,
-                           category_acr_id=form.category.data,
-                           user_id=current_user.id)
+        inst = Institution(
+            name_inst=form.name_inst.data,
+            count_student=form.count_student.data,
+            info=form.text.data,
+            city=form.city.data,
+            military_department=form.military_department.data,
+            category_acr_id=form.category.data,
+            user_id=current_user.id
+        )
 
         db.session.add(inst)
         db.session.commit()
